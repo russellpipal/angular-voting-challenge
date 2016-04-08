@@ -1,0 +1,38 @@
+body {
+  font-family: "Arial", sans-serif;
+  margin-top: 80px;
+}
+
+header {
+  width: 100%;
+  color: white;
+  background-color: tomato;
+  height: 80px;
+  position: absolute;
+  top: 0;
+}
+
+h1 {
+  text-align: center;
+  font-size: 36px;
+}
+
+#lists {
+  display: flex;
+  justify-content: center;
+}
+
+ul {
+  min-width: 200px;
+}
+
+
+p {
+  font-size: 36px;
+  padding: 10px;
+  outline: 1px solid black;
+  text-align: center;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}

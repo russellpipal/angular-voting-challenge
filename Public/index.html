@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html ng-app="votingApp">
+  <head>
+    <meta charset="utf-8">
+    <title>Angular Voting Challenge</title>
+    <script src="angular.min.js"></script>
+    <script src="client.js"></script>
+    <link href="stylesheet.css" rel="stylesheet" />
+  </head>
+  <body ng-controller="MainController">
+
+    <header>
+      <h1>'Merica Choo-Choo-Chooses!</h1>
+    </header>
+
+    <div id="buttons">
+      <button ng-click="showCandidates()">Show Candidates</button>
+      <button ng-click="showWinner()">Show Winner</button>
+    </div>
+
+    <div ng-show="candidatesShown" id="lists">
+
+      <div id="dems">
+        Democrats:
+        <ul>
+          <li ng-repeat="dem in dems">
+            {{dem}}
+          </li>
+        </ul>
+      </div>
+
+      <div id="reps">
+        Republicans:
+        <ul>
+          <li ng-repeat="rep in reps">
+            {{rep}}
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div ng-show="winnerShown" id="winner">
+      <p>Winner: {{winner}}</p>
+    </div>
+
+  </body>
+</html>
